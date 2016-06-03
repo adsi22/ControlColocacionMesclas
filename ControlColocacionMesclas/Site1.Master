@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ControlColocacionMesclas.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="Css/Principal.css" rel="stylesheet" type="text/css"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div class="content-wrapper">
+            <h1><a id="title">Control Colocacion Mezclas</a></h1>
+            <div id="login">
+                <ul>
+                   <li><a id="Iniciar" runat="server" href="Vistas/Login.aspx">Iniciar sesión</a></li>
+                   <li><a id="Cerrar" runat="server" href="Vistas/CerrarSession.aspx">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="Contenido" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="contentBody">
+        <h3>Funciones del sistema</h3>
+        <div id="caja1">
+            <p>Produccion Operario</p>
+            <asp:Image Id="Pastel" Width="140px" runat="server" ImageUrl="Images/Operario.png" />
+        </div>
+        <div id="caja1">
+            <p>Produccion Equipo</p>
+             <asp:Image Id="Image0" Width="140px" runat="server" ImageUrl="Images/Equipo.png" />
+        </div>
+        <div id="caja1">
+            <p>Consolidado Total</p>
+             <asp:Image Id="Image1" Width="140px" runat="server" ImageUrl="Images/Consolidado.png" />
+        </div>
+        <div id="caja1">
+            <p>Graficas</p>
+            <asp:Image Id="Image2" Width="140px" runat="server" ImageUrl="Images/Graficas.png" />
+        </div>
+        <div id="caja1">
+            <p>Reguistro Usuario</p>
+            <asp:Image Id="Image3" Width="140px" runat="server" ImageUrl="Images/Usuario.png" />
+        </div>
+        <div id="caja1">
+            <p>Reguistro Equipo</p>
+             <asp:Image Id="Image4" Width="140px" runat="server" ImageUrl="Images/Equipo.png" />
+        </div>
+    </div>
+    <footer>
+        <div id="footer">
+            <h3>Siguenos en la redes sociales</h3>
+            <div id="caja2">
+                <a href="https://www.facebok.com/prgramadores" class="fbk" target="_blank">&nbsp;</a>
+                <p>Hasta fan de nuestra red social</p>
+            </div>
+            <div id="caja2">
+                <a href="https://twitter.com/programadoresa5" class="twitter" target="_blank">&nbsp;</a>
+                <p>Siguenos en la red social</p>
+            </div>
+            <div id="caja2">
+                <a href="https://plus.google.com/u/2/107966555070255888100" class="google" target="_blank">&nbsp;</a>
+                <p>Agreganos en tu circulo</p>
+            </div>
+            <div id="caja2">
+                <a href="https://www.youtube.com/channel/UCfJBtAht4VPFVhCu8EhYysQ" class="youtube" target="_blank">&nbsp;</a>
+                    <p>Siguenos en nuestrocanal</p>
+            </div>
+            <div class="copy">
+                <p>
+                    &copy;<%:DateTime.Now.Year%> Programadores Acse
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
